@@ -49,8 +49,34 @@
             height: auto;
         }
 
+        /* Media Queries สำหรับ Mobile */
+        @media (max-width: 767px) {
+            nav a {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+            .main-title {
+                font-size: 1.8em;
+            }
+            .container {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            ul {
+                padding-left: 15px;
+            }
+            .image-m img {
+                max-width: 120px;
+            }
+        }
+
         /* Media Queries สำหรับ Tablet */
-        @media (min-width: 768px) {
+        @media (min-width: 768px) and (max-width: 1023px) {
             nav a {
                 padding: 10px 20px;
             }

@@ -17,11 +17,12 @@
             background-color: #333;
             overflow: hidden;
             padding: 10px 0;
+            text-align: center;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            padding: 14px 20px;
+            padding: 10px 15px;
             display: inline-block;
         }
         nav a:hover {
@@ -39,7 +40,7 @@
         }
         .image-wrapper {
             margin-bottom: 20px;
-            max-width: 200px;
+            max-width: 150px;
         }
         .image-wrapper img {
             width: 100%;
@@ -47,7 +48,7 @@
             border-radius: 50%;
         }
         .main-title {
-            font-size: 2em;
+            font-size: 1.8em;
             margin-bottom: 10px;
             text-align: center;
         }
@@ -60,9 +61,29 @@
             margin: 20px 0;
         }
         .image-m img {
-            max-width: 150px;
+            max-width: 120px;
             width: 100%;
             height: auto;
+        }
+
+        /* Media Queries สำหรับมือถือ */
+        @media (max-width: 767px) {
+            .container {
+                padding: 15px;
+            }
+            nav a {
+                padding: 8px 10px;
+                font-size: 0.85em;
+            }
+            .main-title {
+                font-size: 1.5em;
+            }
+            .info p {
+                font-size: 0.9em;
+            }
+            .image-wrapper {
+                max-width: 100px;
+            }
         }
 
         /* สำหรับ Tablet */
@@ -76,17 +97,23 @@
                 text-align: left;
             }
             .main-title {
-                font-size: 2.5em;
+                font-size: 2.2em;
+            }
+            nav a {
+                padding: 14px 25px;
             }
         }
 
         /* สำหรับ Desktop/Laptop */
         @media (min-width: 1024px) {
+            .main-title {
+                font-size: 3em;
+            }
             nav a {
                 padding: 14px 30px;
             }
-            .main-title {
-                font-size: 3em;
+            .container {
+                padding: 40px;
             }
         }
     </style>
@@ -121,5 +148,6 @@
     <div class="image-m">
         <img src="resourses/whiteBG-CSTU-LOG_TU_Thicker-1.png" alt="มหาวิทยาลัยธรรมศาสตร์ โลโก้">
     </div>
+
 </body>
 </html>
